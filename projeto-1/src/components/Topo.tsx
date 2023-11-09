@@ -1,15 +1,24 @@
+import Link from "next/link";
 export default function Topo() {
   const n = "Amy Collier";
   let n2 = "Birdie Morales";
 
   return (
-    <div className="flex  justify-between items-center bg-zinc-300 h-[100px]">
-      <div>Topo</div>
-      <div className="flex flex-col justify-center items-center mx-10">
-        <div className="text-3xl font-semibold">{n}</div>
-        <div className="text-sm font-semibold">{n2}</div>
-      </div>
-      <div className="subtitle">Cody Rodgers</div>
+    <div className="flex items-center justify-between h-8 px-5 py-8 bg-zinc-900 text-zinc-50">
+      <h1 className="text-3xl">LOGO</h1>
+      <nav>
+        <ul className="flex gap-3">
+          <li>
+            <Link href={"/"}>Home</Link>
+          </li>
+          <li>
+            <Link href={"/produtos"}>Produtos</Link>
+          </li>
+          <li>
+            <Link href={"/teste"}>Teste</Link>
+          </li>
+        </ul>
+      </nav>
     </div>
   );
 }
