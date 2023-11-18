@@ -7,3 +7,20 @@
   font-size: 0.875rem;
   line-height: 1.25rem;
 }
+
+.campoForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.campoForm label{
+  font-size:larger;
+  
+}
+.campoForm input{
+  border:3px solid #888;
+  border-radius:3px
+
+}
