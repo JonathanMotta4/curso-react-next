@@ -3,12 +3,12 @@ import Topo from '@/components/Topo'
 import { useRouter } from 'next/router'
 export default function Produtos() {
   const router = useRouter()
-  //const nome = router.query.nome
-  //const sNome = router.query.sNome
-  const {nome,sNome}=router.query
-  console.log(nome);
-  console.log(sNome);
-  
+  // const nome = router.query.nome
+  // const sNome = router.query.sNome
+  const { nome, sNome } = router.query
+  console.log(nome)
+  console.log(sNome)
+
   function cDesc(valor: number, desconto: number) {
     return valor - desconto
   }
@@ -63,7 +63,7 @@ export default function Produtos() {
     <main>
       <Topo />
 
-      <div className='flex justify-center gap-2'>
+      <div className="flex justify-center gap-2">
         {produtos.map((p: any) => {
           if (p.disponivel) {
             return (
@@ -73,8 +73,10 @@ export default function Produtos() {
                 valor={p.valor}
                 desconto={p.desconto}
                 funcao={cDesc}
-              ><div>Teste1</div>
-              <div>Teste2</div></Card>
+              >
+                <div>Teste1</div>
+                <div>Teste2</div>
+              </Card>
             )
           }
         })}

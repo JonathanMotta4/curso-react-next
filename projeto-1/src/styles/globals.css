@@ -15,12 +15,10 @@
   align-items: flex-start;
 }
 
-.campoForm label{
-  font-size:larger;
-  
+.campoForm label {
+  font-size: larger;
 }
-.campoForm input{
-  border:3px solid #888;
-  border-radius:3px
-
+.campoForm input {
+  border: 3px solid #888;
+  border-radius: 3px;
 }
