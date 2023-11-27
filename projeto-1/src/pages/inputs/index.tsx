@@ -1,6 +1,6 @@
 import Topo from '@/components/Topo'
 import { useState } from 'react'
-
+import Globals from '@/components/Globals'
 export default function PaginaInputs() {
   const [nome, setNome] = useState<string>('')
   const [pais, setPais] = useState('')
@@ -40,6 +40,7 @@ export default function PaginaInputs() {
     'Botswana',
     'Vatican City',
   ]
+
   return (
     <>
       <Topo />
@@ -66,6 +67,11 @@ export default function PaginaInputs() {
         </div>
         <span>{nome} </span>
         <span>{pais}</span>
+      </div>
+      <div className="flex flex-col">
+        <span>{Globals.nome}</span>
+        <span>{Globals.nome2}</span>
+        <span>{Globals.ano}</span>
       </div>
     </>
   )
