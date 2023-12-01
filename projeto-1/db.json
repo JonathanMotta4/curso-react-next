@@ -1,0 +1,16 @@
+{
+  "persons":[
+    { "id": 1, "name": "Martin Perez", "money": 169.5, "vehicle": "car" },
+  { "id": 2, "name": "Terry Barrett", "money": 852.23, "vehicle": "car" },
+  { "id": 3, "name": "Rosetta Horton", "money": 438.49, "vehicle": "car" },
+  { "id": 4, "name": "Sean Blair", "money": 575.48, "vehicle": "car" },
+  { "id": 5, "name": "Craig Bowman", "money": 9982.9, "vehicle": "car" },
+  { "id": 6, "name": "Claudia Lawrence", "money": 206.48, "vehicle": "motocycle" },
+  { "id": 7, "name": "Jordan Armstrong", "money": 741.44, "vehicle": "motocycle" },
+  { "id": 8, "name": "Bernice Haynes", "money": 926.52, "vehicle": "snake" },
+  { "id": 9, "name": "Ray Jefferson", "money": 3636.82, "vehicle": "motocycle" },
+  { "id": 10, "name": "Julia Duncan", "money": 644.83, "vehicle": "" },
+  { "id": 11, "name": "Ethan Smith", "money": 519.25, "vehicle": "car" },
+  { "id": 12, "name": "Russell Evans", "money": 763.1, "vehicle": "" }
+]
+}
