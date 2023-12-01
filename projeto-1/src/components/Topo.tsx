@@ -1,8 +1,5 @@
 import Link from 'next/link'
 export default function Topo() {
-  const n = 'Amy Collier'
-  const n2 = 'Birdie Morales'
-
   return (
     <div className="flex h-8 items-center justify-between bg-zinc-900 px-5 py-8 text-zinc-50">
       <Link href={'/'}>
@@ -27,6 +24,7 @@ export default function Topo() {
 
         <Link href={'/inputs'}>Inputs</Link>
         <Link href={'/useeffect'}>Use Effect</Link>
+        <Link href={'/filtragem'}>Filtragem</Link>
       </nav>
     </div>
   )

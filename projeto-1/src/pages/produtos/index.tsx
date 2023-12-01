@@ -12,9 +12,7 @@ export default function Produtos() {
   function cDesc(valor: number, desconto: number) {
     return valor - desconto
   }
-  function cDesc2(valor: number, desconto: number) {
-    return valor - desconto / 2
-  }
+
   const produtos = [
     {
       id: 1,
@@ -65,8 +63,7 @@ export default function Produtos() {
 
       <div className="flex justify-center gap-2">
         {produtos.map((p: any) => {
-          if (p.disponivel) {
-            return (
+          {p.disponivel && return (
               <Card
                 key={p.id}
                 produto={p.produto}
@@ -77,19 +74,10 @@ export default function Produtos() {
                 <div>Teste1</div>
                 <div>Teste2</div>
               </Card>
-            )
+            )}
           }
-        })}
+        )}
       </div>
     </main>
   )
-}
-
-const teste = {
-  display: 'flex',
-  justifyContent: 'center',
-  alignItems: 'center',
-  color: 'dodgerblue',
-  backgroundColor: '#181818',
-  fontSize: '3rem',
 }
