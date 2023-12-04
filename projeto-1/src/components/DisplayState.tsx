@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 interface DisplayStateProps {
   counter: number
   fCounter: any

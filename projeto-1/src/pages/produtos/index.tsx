@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
+/* eslint-disable array-callback-return */
 import Card from '@/components/Card'
 import Topo from '@/components/Topo'
 import { useRouter } from 'next/router'
@@ -63,7 +65,8 @@ export default function Produtos() {
 
       <div className="flex justify-center gap-2">
         {produtos.map((p: any) => {
-          {p.disponivel && return (
+          if (p.disponivel) {
+            return (
               <Card
                 key={p.id}
                 produto={p.produto}
@@ -74,9 +77,9 @@ export default function Produtos() {
                 <div>Teste1</div>
                 <div>Teste2</div>
               </Card>
-            )}
+            )
           }
-        )}
+        })}
       </div>
     </main>
   )
